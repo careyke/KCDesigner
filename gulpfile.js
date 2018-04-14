@@ -20,7 +20,7 @@ gulp.task('clean_public', () => {
 
 gulp.task('copy_iconFont', ['clean_public'], () => {
     gutil.log('拷贝第三方的图标字体库');
-    gulp.src('./static/css/*.*').pipe(gulp.dest(dist + 'public/css'));
+    // gulp.src('./static/css/*.*').pipe(gulp.dest(dist + 'public/css'));
     return gulp.src('./static/fonts/*.*').pipe(gulp.dest(dist + 'public/fonts'));
 })
 

@@ -1,0 +1,51 @@
+.topContainer{
+    display: flex;
+    height: 60px;
+    background-color: #ff8940;
+    margin-bottom: 8px;
+    .containerLeft{
+        display: flex;
+        flex-grow: 0;
+        width: 240px;
+    }
+    .containerCenter{
+        display: flex;
+        flex-grow: 1;
+        align-items: stretch;
+        padding: 0 8px;
+    }
+    .containerRight{
+        display: flex;
+        justify-content:center;
+        align-items: stretch;
+        width: 240px;
+        flex-grow: 0;
+    }
+}
+.botContainer{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: stretch;
+    .controlList{
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        flex-grow: 0;
+        background-color: #ffffff;
+    }
+    .designerStage{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        margin: 0 8px;
+        background-color: #ffffff;
+    }
+    .attrList{
+        display: flex;
+        width: 240px;
+        flex-direction: column;
+        flex-grow: 0;
+        background-color: #ffffff;
+    }
+}

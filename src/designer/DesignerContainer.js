@@ -3,16 +3,21 @@
  */
 
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+import { ContainerTop, ContainerBottom } from './components/privateComponents';
+import DesignerContainerStyle from './DesignerContainer.less';
 
-class DesignerContainer extends React.Component{
-    constructor(props){
+class DesignerContainer extends React.Component {
+    constructor(props) {
         super(props);
     }
 
-    render(){
+    render() {
         return (
-            <div></div>
+            <div className={DesignerContainerStyle['container']}>
+                <ContainerTop></ContainerTop>
+                <ContainerBottom></ContainerBottom>
+            </div>
         )
     }
 }
