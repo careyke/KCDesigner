@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import ImgTextButton from './ImgTextButton';
+import ImgTextButton from './base/ImgTextButton';
 
 export default class DSImgTextButton extends React.Component {
     constructor(props) {

@@ -11,3 +11,6 @@ export const toTopIcon = 'kc-icon-shangyi';
 export const toBottomIcon = 'kc-icon-xiayi'; 
 export const clearFormatIcon = 'kc-icon-qingchuyangshi'; 
 
+
+//控件图标
+export const text='kc-icon-danhangwenben';

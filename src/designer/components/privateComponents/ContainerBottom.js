@@ -4,8 +4,8 @@
 
 import React from 'react';
 import privateStyle from './privateComponent.less';
-import ControlList from './ControlList';
-import AttributeList from './AttributeList';
+import DesignerLeft from './DesignerLeft';
+import DesignerRight from './DesignerRight';
 import DesignerStage from './DesignerStage';
 
 export default class ContainerBottom extends React.Component{
@@ -16,9 +16,9 @@ export default class ContainerBottom extends React.Component{
     render(){
         return(
             <div className={privateStyle['botContainer']}>
-                <ControlList></ControlList>
+                <DesignerLeft></DesignerLeft>
                 <DesignerStage></DesignerStage>
-                <AttributeList></AttributeList>
+                <DesignerRight></DesignerRight>
             </div>
         )
     }

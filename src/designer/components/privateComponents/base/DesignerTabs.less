@@ -1,0 +1,35 @@
+.tabContainer{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: stretch;
+    .title{
+        display: flex;
+        height: 24px;
+        flex-grow: 0;
+        flex-direction: row;
+        background-color: #ff8940;
+        flex-shrink: 0;
+        cursor: pointer;
+        .titleItem{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            color: #ffffff;
+        }
+        .activeTitleItem{
+            background-color: #ff6200;
+        }
+    }
+    .panelContainer{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        .panel{
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+        }
+    }
+}
