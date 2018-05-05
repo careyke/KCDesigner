@@ -3,11 +3,25 @@
     flex-grow: 0;
     flex-direction: column;
     align-items: stretch;
+    margin: 10px 0;
+    flex-shrink: 0;
     .colHeader{
         display: flex;
-        height: 20px;
+        height: 24px;
         justify-content: space-between;
         align-items: center;
+        background-color: #fff;
+        padding: 2px 15px;
+        .title{
+            color: #ff8940;
+            font: 14px;
+            font-weight: bold;
+        }
+        .icon{
+            color: #ff8940;
+            font: 14px;
+            cursor: pointer;
+        }
     }
     .colContent{
         display: flex;
@@ -15,5 +29,8 @@
         flex-grow: 1;
         flex-shrink: 0;
         flex-wrap: wrap;
+    }
+    .collapse{
+        display: none;
     }
 }

@@ -6,6 +6,7 @@ import { createStore } from 'redux';
 import { Provider, connect } from 'react-redux';
 import allReducer from './reducers/testReducer';
 import DesignerContainer from './DesignerContainer';
+import defaultState from './stateModel';
 
 class Designer extends React.Component {
     constructor(props) {
@@ -13,7 +14,8 @@ class Designer extends React.Component {
     }
 
     componentWillMount() {
-        this.store = createStore(allReducer);
+        console.log(defaultState);
+        this.store = createStore(allReducer,defaultState);
         window.DStore=this.store; //调试用的，最后会删除
     }
 

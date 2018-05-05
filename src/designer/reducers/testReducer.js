@@ -8,9 +8,13 @@ let testReducer = (state = {}, action) => {
         return state;
     }
 }
+let controlReducer=(state = {}, action)=>{
+    return state;
+}
 
 let allReducers = combineReducers({
-    test: testReducer
+    // test: testReducer,
+    controls: controlReducer
 })
 
 export default allReducers;

@@ -6,6 +6,7 @@
 import React from 'react';
 import privateStyle from './privateComponent.less';
 import { Tab, TabTitle, TabPanelContainer, TabPanel } from './base/DesignerTabs';
+import ControlList from './ControlList';
 
 const titleData=['组件','结构'];
 
@@ -21,7 +22,7 @@ export default class DesignerLeft extends React.Component {
                     <TabTitle type={'title'} titleData={titleData}></TabTitle>
                     <TabPanelContainer type={'panel'}>
                         <TabPanel>
-                            <div>{'组件'}</div>
+                            <ControlList/>
                         </TabPanel>
                         <TabPanel>
                             <div>{'结构'}</div>
