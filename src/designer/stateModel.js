@@ -28,8 +28,20 @@ let controls=[
     }
 ]
 
+let ui={
+    uiTree:{
+        type:'rootType',
+        id:'root',
+        item:[]
+    },
+    uiInfo:[
+        {id:'root'}
+    ]
+}
+
 //defaultState的第一层不能转化成immutable，在combineReducer中获取不到
 let state={
-    controls:fromJS(controls)
+    controls:fromJS(controls),
+    ui:fromJS(ui)
 }
 export default state;

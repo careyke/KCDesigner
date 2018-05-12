@@ -14,7 +14,7 @@ let controlReducer=(state = {}, action)=>{
 
 let allReducers = combineReducers({
     // test: testReducer,
-    controls: controlReducer
+    ui: controlReducer
 })
 
 export default allReducers;

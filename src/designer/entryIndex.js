@@ -4,7 +4,7 @@
 import React from 'react';
 import { createStore } from 'redux';
 import { Provider, connect } from 'react-redux';
-import allReducer from './reducers/testReducer';
+import allReducer from './reducers';
 import DesignerContainer from './DesignerContainer';
 import defaultState from './stateModel';
 
@@ -14,7 +14,6 @@ class Designer extends React.Component {
     }
 
     componentWillMount() {
-        console.log(defaultState);
         this.store = createStore(allReducer,defaultState);
         window.DStore=this.store; //调试用的，最后会删除
     }

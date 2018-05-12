@@ -4,10 +4,11 @@
  * 操作immutable
  */
 
-import { isArray } from "util";
+// import { isArray } from "util";
+import {Type} from '../../utils/common';
 
 export const getDataByPath=(state,path)=>{
-    if(isArray(path)){
+    if(Type.isArray(path)){
         return state.getIn(path);
     }else{
         return state.get(path);
