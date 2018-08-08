@@ -32,11 +32,12 @@ let ui={
     uiTree:{
         type:'rootType',
         id:'root',
-        item:[]
+        items:[]
     },
     uiInfo:[
-        {id:'root'}
-    ]
+        {id:'root',isContainer:true}
+    ],
+    selectedControls:[]
 }
 
 //defaultState的第一层不能转化成immutable，在combineReducer中获取不到

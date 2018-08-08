@@ -9,10 +9,19 @@ export default function uiReducers(state = Map(), action) {
     switch (action.type) {
         case actionnames.ADD_CONTROL:
             return addControlReducer(state, action);
+        case actionnames.SELECT_CONTROL:
+            return selectControls(state,action);
     }
     return state;
 }
 
-let addControlReducer = (state, action) => {
+const addControlReducer = (state, action) => {
     return state;
+}
+
+const selectControls = (state, action) => {
+    let id = action.args;
+    let selectedList = state.getIn(['selectedControls']);
+    let newList = selectedList.push(id);
+    return state.set('selectedControls',newList);
 }

@@ -18,14 +18,16 @@ class DesignerContainer extends React.Component {
     static childContextTypes={
         controls:PropTypes.object,
         ui:PropTypes.object,
-        addControl:PropTypes.func
+        addControl:PropTypes.func,
+        selectControls:PropTypes.func
     }
 
     getChildContext(){
         return {
             controls:this.props.controls,
             ui:this.props.ui,
-            addControl:this.props.addControl
+            addControl:this.props.addControl,
+            selectControls:this.props.selectControls
         }
     }
     //建立context，用来发布数据 -end
@@ -35,7 +37,11 @@ class DesignerContainer extends React.Component {
         return (
             <div className={DesignerContainerStyle['container']}>
                 <ContainerTop></ContainerTop>
-                <ContainerBottom></ContainerBottom>
+                <ContainerBottom 
+                    ui={this.props.ui}
+                    addControl={this.props.addControl}
+                    selectControls={this.props.selectControls}
+                ></ContainerBottom>
             </div>
         )
     }

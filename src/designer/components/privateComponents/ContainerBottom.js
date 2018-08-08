@@ -16,8 +16,8 @@ export default class ContainerBottom extends React.Component{
     render(){
         return(
             <div className={privateStyle['botContainer']}>
-                <DesignerLeft></DesignerLeft>
-                <DesignerStage></DesignerStage>
+                <DesignerLeft addControl={this.props.addControl}></DesignerLeft>
+                <DesignerStage ui={this.props.ui} selectControls={this.props.selectControls}></DesignerStage>
                 <DesignerRight></DesignerRight>
             </div>
         )

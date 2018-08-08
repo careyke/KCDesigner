@@ -1,0 +1,20 @@
+.isSelected{
+    // outline: # dashed 1px !important;
+    position: relative;
+    &::before{
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: 1px solid #ff6200;
+        pointer-events: none !important;
+        z-index: 1;
+    }
+}
+
+.designer-ui{
+    display: flex;
+    flex-grow: 1;
+}
